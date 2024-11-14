@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="manifest.json">
+    <link rel="shortcut icon" href="assets/images/icon-128x128.png"/>
+    <title>Install PWA Example</title>
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<div id="app">
+    <h1 class="heading">Progressive Web Application</h1>
+    <div class="instructions">
+        <h3>Как установить приложение на ваше устройство?</h3>
+        <ol>
+            <li>Когда появляется окно с предложением установки, нажмите кнопку <strong>"Установить приложение"</strong>.</li>
+            <li>После установки приложение будет доступно с вашего домашнего экрана, как любое другое приложение.</li>
+        </ol>
+
+        <h3>Как установить на устройство с iOS?</h3>
+        <ul>
+            <li>Для установки на устройствах iOS необходимо выполнить несколько шагов:</li>
+            <li>Откройте сайт в браузере <strong>Safari</strong> (не поддерживается в других браузерах).</li>
+            <li>Когда сайт загружен, нажмите на кнопку <strong>Поделиться</strong> (иконка внизу экрана) и выберите опцию <strong>Добавить на экран домой</strong>.</li>
+            <li>После этого приложение появится на вашем домашнем экране, и вы сможете использовать его как обычное мобильное приложение.</li>
+        </ul>
+
+        <h3>Почему у меня не появляется окно с предложением установки?</h3>
+        <ul>
+            <li><strong>Приложение уже установлено:</strong> Если вы уже установили приложение на ваше устройство, предложение повторно появляться не будет.</li>
+            <li><strong>Установка не поддерживается:</strong> Ваша версия браузера или операционная система могут не поддерживать установку приложения.</li>
+        </ul>
+        <p>Если вы отклонили предложение, вы можете установить приложение позже, перезагрузив страницу и выбрав установку снова.</p>
+    </div>
+
+
+    <div class="modal" id="modal" hidden>
+        <div class="flex-row">
+            <span class="modal-text">Вы можете установить данное приложение на свое устройство</span>
+            <button class="close-btn" id="closeBtn"><img src="assets/images/close-btn.png" alt="close"></button>
+        </div>
+        <button class="modal-btn" id="installBtn">Установить приложение</button>
+    </div>
+</div>
+<script src="assets/app.js"></script>
+</body>
+</html>
